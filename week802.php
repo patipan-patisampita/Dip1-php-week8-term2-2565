@@ -2,17 +2,12 @@
 class Employee
 {
     public $name, $age, $salary;
-
     function __construct($n, $a, $s)
     {
         $this->name = $n;
         $this->age = $a;
         $this->salary = $s;
     }
-    // function __construct()
-    // {
-    //     print("Employee Constructor");
-    // }
 
     public function info()
     {
