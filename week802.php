@@ -1,6 +1,5 @@
 <?php
-class Employee
-{
+class Employee{
     public $name, $age, $salary;
 
     function __construct($n, $a, $s)
@@ -9,6 +8,10 @@ class Employee
         $this->age = $a;
         $this->salary = $s;
     }
+    // function __construct()
+    // {
+    //     print("Employee Constructor");
+    // }
 
     public function info()
     {
@@ -19,5 +22,14 @@ class Employee
     }
 }
 
-$obj1 = new Employee("Mark",45,3000000);
-$obj1->info();
+class Manager extends Employee{
+    function __construct()
+    {
+        // print("Manager Constructor");
+    }
+}
+
+// $obj1 = new Employee();
+$m1 = new Manager("Jeff Bezzo",55,3500000);
+$m1->info();
+// $obj1->info();
